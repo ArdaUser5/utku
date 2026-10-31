@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Utku Mut hakkında kısa bir kişisel tanıtım sayfası.">
+  <title>Utku Mut | Kişisel Sayfam</title>
+  <style>
+    :root {
+      --bg: #0b1220;
+      --panel: #121e32;
+      --accent: #42d392;
+      --text: #f4f7fb;
+      --muted: #b8c5d6;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: radial-gradient(circle at top right, #183b43 0, transparent 35%), var(--bg);
+    }
+    main {
+      width: min(100%, 760px);
+      padding: clamp(28px, 6vw, 56px);
+      border: 1px solid rgba(255,255,255,.1);
+      border-radius: 24px;
+      background: linear-gradient(145deg, rgba(18,30,50,.98), rgba(15,27,43,.96));
+      box-shadow: 0 24px 70px rgba(0,0,0,.35);
+    }
+    .tag {
+      display: inline-block;
+      padding: 8px 13px;
+      border-radius: 999px;
+      color: var(--accent);
+      background: rgba(66,211,146,.12);
+      font-size: .9rem;
+      font-weight: 700;
+      letter-spacing: .04em;
+    }
+    h1 { margin: 20px 0 10px; font-size: clamp(2.5rem, 8vw, 4.5rem); }
+    h1 span { color: var(--accent); }
+    .intro { max-width: 55ch; color: var(--muted); font-size: 1.12rem; line-height: 1.75; }
+    .football {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      margin-top: 34px;
+      padding: 20px;
+      border-radius: 18px;
+      background: rgba(255,255,255,.055);
+    }
+    .ball { font-size: 2.7rem; }
+    h2 { margin: 0 0 7px; font-size: 1.2rem; }
+    .football p { margin: 0; color: var(--muted); line-height: 1.6; }
+    footer { margin-top: 34px; color: #8293a9; font-size: .9rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="tag">KİŞİSEL SAYFAM</span>
+    <h1>Merhaba, ben <span>Utku Mut!</span></h1>
+    <p class="intro">
+      13 yaşındayım. Hareketli olmayı, yeni şeyler öğrenmeyi ve özellikle
+      futbol oynamayı seviyorum. Futbol benim için hem eğlenceli bir aktivite
+      hem de takım ruhunu yaşamanın güzel bir yolu.
+    </p>
+
+    <section class="football" aria-labelledby="football-title">
+      <div class="ball" aria-hidden="true">⚽</div>
+      <div>
+        <h2 id="football-title">Futbol tutkusu</h2>
+        <p>Paslaşmak, takım arkadaşlarımla oynamak ve sahada keyifli vakit geçirmek en sevdiğim şeylerden.</p>
+      </div>
+    </section>
+
+    <footer>Bu sayfa Utku Mut için hazırlanmıştır.</footer>
+  </main>
+</body>
+</html>
